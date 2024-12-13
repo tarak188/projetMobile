@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".AllabsencesActivity">
+
+    <!-- Search View for filtering by name -->
+    <SearchView
+        android:id="@+id/searchViewName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:queryHint="Search by name"
+        android:iconifiedByDefault="false"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Button for filtering by date -->
+    <Button
+        android:id="@+id/buttonFilterDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Date"
+        android:layout_marginBottom="16dp" />
+
+    <!-- ScrollView for the absence list -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:contentDescription="Absence list">
+
+        <LinearLayout
+            android:id="@+id/absenceListContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:contentDescription="List of absences">
+            <!-- Absences will be dynamically added here -->
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

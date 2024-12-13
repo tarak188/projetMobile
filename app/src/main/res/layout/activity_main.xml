@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_blue"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:padding="15dp"
+        android:background="@color/white"
+        android:elevation="4dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp">
+
+        <!-- App Logo -->
+        <ImageView
+            android:id="@+id/imageView_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/essect"
+            android:maxWidth="180dp"
+            android:adjustViewBounds="true"
+            android:layout_centerHorizontal="true" />
+
+        <!-- Main Header Text -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_main_head"
+            android:layout_marginTop="20dp"
+            android:text="Bienvenue chez Essect-App"
+            android:textAlignment="center"
+            android:layout_below="@id/imageView_logo"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/blue" />
+
+        <!-- Login Button -->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_login"
+            android:text="Login"
+            android:layout_marginTop="50dp"
+            android:layout_below="@id/textView_main_head"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:background="@color/dark_blue"
+            android:textColor="@color/white"
+            android:padding="12dp"
+            android:textSize="18sp"
+            android:elevation="4dp" />
+
+        <!-- Register Button -->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_register"
+            android:text="Register"
+            android:layout_below="@id/button_login"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:background="@color/green"
+            android:textColor="@color/white"
+            android:padding="12dp"
+            android:textSize="18sp"
+            android:elevation="4dp" />
+    </RelativeLayout>
+</ScrollView>

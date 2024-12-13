@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".reclamerActivity">
+
+    <!-- Absence ID TextView -->
+    <TextView
+        android:id="@+id/absenceIdTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Absence ID: "
+        android:textSize="18sp"
+        android:layout_margin="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Reclamation ID TextView -->
+    <TextView
+        android:id="@+id/reclamationIdTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Reclamation ID: "
+        android:textSize="18sp"
+        android:layout_margin="16dp"
+        app:layout_constraintTop_toBottomOf="@id/absenceIdTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Details TextBox -->
+    <EditText
+        android:id="@+id/detailsEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter details for the reclamation"
+        android:inputType="textMultiLine"
+        android:layout_margin="16dp"
+        app:layout_constraintTop_toBottomOf="@id/reclamationIdTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+    <Button
+        android:id="@+id/sendButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send"
+        app:layout_constraintTop_toBottomOf="@id/detailsEditText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
